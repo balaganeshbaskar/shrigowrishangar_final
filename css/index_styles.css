@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+body, html 
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: black;
+}
+
+
+/* The hero image */
+.hero-image 
+{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Hero.jpg");*/
+  background-image: url("images/Hero.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.sec_nav
+{
+  padding: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.navbar_div
+{
+  position: absolute;
+  /* overflow: hidden; */
+  z-index: 1;
+
+  width: 100%;
+}
+
+.second_layer_nav.navbar
+{
+  padding: 0px;
+}
+
+.first_layer_nav
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 0.9rem;
+
+    /*color: rgba(165,157,144,.75) !important;*/
+    color: #e7ba7a !important;
+    background-color: rgba(20,20,20,.8) !important;
+}
+
+.second_layer_nav
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 1.1rem;
+
+    color: white !important;
+    background-color: rgba(20,20,20,.98) !important;
+}
+
+.second_layer_nav .nav-link
+{
+  color: white !important;
+}
+
+.second_layer_nav .dropdown-item, .dropdown-menu
+{
+  background-color: black;
+  color: white;
+}
+
+
+img.logo {
+   filter: brightness(120%);
+}
+
+/* stroke */
+nav.stroke ul li a
+{
+  position: relative;
+}
+
+nav.stroke ul li a:after
+{
+  position: absolute;
+  /*bottom: 0;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  /*#AD854D*/
+  background: #db9839;
+  height: 3px;
+}
+
+nav.stroke ul li a:hover:after
+{
+  width: 100%;
+}
+
+nav.stroke ul li a:hover
+{
+    color: #db9839 !important;
+}
+
+nav.stroke ul li
+{
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+
+nav.stroke ul li a.active_nav_link
+{
+    color: #db9839 !important;
+}
+
+nav.stroke ul li a.active_nav_link:after
+{
+  position: absolute;
+  /*bottom: 0;*/  
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  /*#AD854D*/
+  background: #db9839;
+  height: 3px;
+}
+
+nav.stroke ul li a.active_nav_link:after
+{
+  width: 100%;
+}
+
+
+.third_layer_nav
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    font-size: 1rem;
+
+    /*color: rgba(165,157,144,.75) !important;*/
+    color: #e7ba7a !important;
+    background-color: rgba(20,20,20,.8) !important;
+
+    padding: 0px;
+    width: 100%;
+}
+
+
+.footer
+{
+  color: white !important;
+  background-color: rgba(20,20,20,.98) !important;
+  padding: 10px;
+}
+
+.footer_layer_nav
+{ 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 1rem;
+
+    padding-top: 20px; 
+    padding-bottom: 20px;  
+
+}
+
+
+img.footer_logo
+{
+  filter: brightness(120%);
+  height: 80px;
+  padding: 0px;
+}
+
+
+.tybon
+{
+  color: white   !important;
+  background-color: transparent;
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  margin: auto;
+}
+
+/* ul{
+  position: fixed !important;
+  right: 0;
+  left: auto;
+  z-index: 999999;
+} */
+
+
+ .tybon:hover
+ {
+  color: #db9839 !important;
+  text-decoration: none;
+ }
+
+
+.fa-facebook, .fa-instagram
+
+{
+  color: white !important;
+}
+
+.fa-facebook:hover, .fa-instagram:hover 
+ {
+  color: #db9839 !important;
+  text-decoration: none;
+ }
+
+
+
+/* The hero image */
+.hero-image 
+{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Hero.jpg");*/
+  background-image: url("images/Hero.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.centering {
+  text-align: center;
+}
+
+
+.section_separator
+{
+  height: 50px;
+  background-color: black;
+}
+
+
+/*styling for the place starts here*/
+
+.the-place {
+  background-image: url("images/dummy_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: relative;
+  height: 700px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+@media screen and (min-width: 769px) {
+  .the-place-header {
+    font-size: 2rem;
+    line-height: 0.95;
+    margin-top: 200px;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+
+  }
+
+  .the-place-sub-header {
+    font-size: 1.2rem;
+    line-height: 1;  
+  }
+}
+@media screen and (max-width: 768px) {
+  .the-place-header {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    line-height: 0.95;
+    margin-top: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+  }
+
+  .the-place-sub-header {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+}
+
+.gallery {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.gallery-images {
+  width: 100%;
+  box-shadow: 0 0 10px 15px rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.gallery_more, .gallery_more:hover
+{
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+  /*transform: translatez(0);*/
+  text-decoration: none;
+  box-sizing: border-box;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+  color: black;
+  text-align: center;
+  /* background: #db9839; */
+}
+
+.gallery_button
+{
+  margin: auto;
+}
+
+.instagram {
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  background: #db9839;
+}
+
+.card {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #202020;
+}
+
+.card-img-top {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.card-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  color: #db9839;
+}
+
+.card-text {
+  font-size: 0.7rem; 
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  margin-top: -15px;
+  color: white;
+}
+
+.room_types
+{
+  background-color: black;
+    /* border: 1px solid #e7ba7a; */
+    border: 1px solid 	#505050;
+    transition: transform .2s;
+}
+
+.room_types:hover
+{
+  transform: scale(1.05);
+  box-shadow: rgba(255, 255, 255, 1) 0.1px 0.1px 2px;
+  
+}
+
+@media screen and (min-width: 769px) {
+  .the-rooms-header {
+    font-size: 2rem;
+    line-height: 0.95;
+    color: #db9839;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+  }
+  .rooms {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .the-rooms-header {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    line-height: 0.95;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #db9839;
+    text-align: center;
+  }
+  .rooms {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.horizontal-line {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3px;
+  background:  #db9839;
+}
+
+.anchor-text-decoration {
+  text-decoration: none !important;
+  color: black;
+}
+
+.the-you-need-sub-header {
+  font-size: 1.2rem;
+  line-height: 1; 
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.maps-embed {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 769px) {
+  /* .testimonials {
+
+  } */
+
+  .testimonials-title {
+    color: #db9839;    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  /* .testimonials-sub-title {
+
+  } */
+}
+@media screen and (max-width: 768px) {
+  /* .testimonials {
+
+  } */
+
+  .testimonials-title {
+    color: #db9839;    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  /* .testimonials-sub-title {
+    
+  } */
+  
+}
+
+/*swiper styles */
+.swiper 
+{
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.owl-carousel .owl-item {
+  transition: all 0.3s ease-in-out
+}
+
+.owl-carousel .owl-item .card {
+  padding: 10px;
+  position: relative;
+  background-color: black;
+  border: 1px solid 	#505050;
+  text-align: center;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow-y: auto !important;
+  padding-bottom: 10px;
+}
+
+.owl-carousel .owl-item img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.owl-carousel .owl-item .card .name {
+  /* position: absolute;
+  bottom: -20px; */
+  /* left: 33%; */
+  text-align: center;
+  color: #db9839; 
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: black;
+  padding: 0.3rem 0.4rem;
+  border-radius: 5px;
+  /* box-shadow: 2px 3px 15px #3c405a */
+}
+
+.owl-carousel .owl-item .card {
+  opacity: 0.2;
+  transform: scale3d(0.8, 0.8, 0.8);
+  transition: all 0.3s ease-in-out
+}
+
+.owl-carousel .owl-item.active.center .card {
+  opacity: 1;
+  transform: scale3d(1, 1, 1)
+}
+
+.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 100%;
+  text-align: center
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  height: 20px;
+  background: black !important;
+  border: 1px solid #db9839 !important;
+  border-radius: 2px !important;
+  opacity: 0.8
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  height: 13px;
+  width: 13px;
+  opacity: 1;
+  transform: translateY(2px);
+  background: #db9839 !important;
+}
+
+@media(min-width: 480.6px) and (max-width: 575.5px) {
+  .owl-carousel .owl-item .card .name {
+      left: 24%
+  }
+}
+
+@media(max-width: 360px) {
+  .owl-carousel .owl-item .card .name {
+      left: 30%
+  }
+}
+
+
+
+.testimonial
+{
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 10px !important;
+  margin-bottom: 60px !important;
+}
+
+.testimonials_date
+{
+  font-size: 0.8rem;
+}

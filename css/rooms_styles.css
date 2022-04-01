@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+
+
+body, html 
+{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* The hero image */
+.hero-image 
+{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Hero.jpg");*/
+  background-image: url("images/Hero.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.sec_nav
+{
+  padding: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.navbar_div
+{
+  position: absolute;
+  /* overflow: hidden; */
+  z-index: 1;
+
+  width: 100%;
+}
+
+.second_layer_nav.navbar
+{
+  padding: 0px;
+}
+
+.first_layer_nav
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 0.9rem;
+
+    /*color: rgba(165,157,144,.75) !important;*/
+    color: #e7ba7a !important;
+    background-color: rgba(20,20,20,.8) !important;
+}
+
+.second_layer_nav
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 1.1rem;
+
+    color: white !important;
+    background-color: rgba(20,20,20,.98) !important;
+}
+
+.second_layer_nav .nav-link
+{
+  color: white !important;
+}
+
+.second_layer_nav .dropdown-item, .dropdown-menu
+{
+  background-color: black;
+  color: white;
+}
+
+
+img.logo {
+   filter: brightness(120%);
+}
+
+/* stroke */
+nav.stroke ul li a
+{
+  position: relative;
+}
+
+nav.stroke ul li a:after
+{
+  position: absolute;
+  /*bottom: 0;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  /*#AD854D*/
+  background: #db9839;
+  height: 3px;
+}
+
+nav.stroke ul li a:hover:after
+{
+  width: 100%;
+}
+
+nav.stroke ul li a:hover
+{
+    color: #db9839 !important;
+}
+
+nav.stroke ul li
+{
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+
+nav.stroke ul li a.active_nav_link
+{
+    color: #db9839 !important;
+}
+
+nav.stroke ul li a.active_nav_link:after
+{
+  position: absolute;
+  /*bottom: 0;*/  
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  /*#AD854D*/
+  background: #db9839;
+  height: 3px;
+}
+
+nav.stroke ul li a.active_nav_link:after
+{
+  width: 100%;
+}
+
+
+.third_layer_nav
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    font-size: 1rem;
+
+    /*color: rgba(165,157,144,.75) !important;*/
+    color: #e7ba7a !important;
+    background-color: rgba(20,20,20,.8) !important;
+
+    padding: 0px;
+    width: 100%;
+}
+
+
+.footer
+{
+  color: white !important;
+  background-color: rgba(20,20,20,.98) !important;
+  padding: 10px;
+}
+
+.footer_layer_nav
+{ 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 1rem;
+
+    padding-top: 20px; 
+    padding-bottom: 20px;  
+
+}
+
+
+img.footer_logo
+{
+  filter: brightness(120%);
+  height: 80px;
+  padding: 0px;
+}
+
+
+.tybon
+{
+  color: white   !important;
+  background-color: transparent;
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  margin: auto;
+}
+
+/* ul{
+  position: fixed !important;
+  right: 0;
+  left: auto;
+  z-index: 999999;
+} */
+
+
+ .tybon:hover
+ {
+  color: #db9839 !important;
+  text-decoration: none;
+ }
+
+
+.fa-facebook, .fa-instagram
+
+{
+  color: white !important;
+}
+
+.fa-facebook:hover, .fa-instagram:hover 
+ {
+  color: #db9839 !important;
+  text-decoration: none;
+ }
+
+
+ 
+/* mobile devices */
+@media screen and (max-width: 767px) 
+{
+
+  body, html 
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+  }
+
+  .tab_content
+  {
+    display: none;
+  }
+
+  .screen_content
+  {
+    display: none;
+  }
+
+  .mobile_content
+  {
+    display: block;
+  }
+
+  .container
+  {
+    color: #db9839;
+  }
+
+
+  .section_separator
+  {
+    height: 30px;
+    background-color: black;
+  }
+
+
+  .room_types
+  {
+    margin: auto;
+    padding: 2px;
+    width: 8rem;
+    transition: transform .2s;
+
+    background-color: black;
+    /* border: 1px solid #e7ba7a; */
+    border: 1px solid 	#505050;
+  }
+
+  .room_types:hover
+  {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 1) 0.1px 0.1px 2px;
+    
+  }
+
+  .room_types_menu
+  {
+    font-size: 20px;
+  }
+
+
+  #room_types_select
+  {
+    max-width: 70%;
+    font-size: 20px;
+    background: black;
+    color: #db9839;
+    border-color: #db9839;
+    height: 50px;
+  }
+
+
+  .card-body
+  {
+    text-align: center;
+  }
+
+  .card-img-top
+  {
+    display: none;
+  }
+
+  .card-title
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #db9839;
+    text-transform: capitalize;
+    height: 50px;
+  }
+
+  .card-text
+  {
+    color: white;
+    font-size: 15px;
+  }
+
+
+  .room_heading
+  {
+    font-weight: bold;
+    color: #db9839;
+    text-transform: capitalize;
+    font-size: 30px;
+  }
+
+
+
+  .room_price
+  {
+    color: #db9839;
+    text-transform: capitalize;
+
+    font-size: 15px;
+  }
+
+  .room_price_value
+  {
+    font-size: 20px;
+  }
+
+
+  .call_us
+  {
+    padding: 10px;
+    width: 100%;
+    transition: transform .2s;
+
+    background-color: #202020;
+    border: 1px solid #383838;
+
+    text-align: center;
+
+    top: -45px;
+  }
+
+  .call_us .card-title
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+
+     font-size: 20px; 
+  }
+
+
+  .call_us h4
+  {
+    margin-bottom:0px; 
+    height: 20px;
+  }
+
+
+  .call_us .card-text
+  {
+    color: #e7ba7a;
+  }
+
+  .fa-phone-square
+  {
+    color: #db9839;
+    margin: 10px;
+  }
+
+  .fa-caret-down
+  {
+    color: #db9839;
+  }
+
+  .amenities
+  {
+    background-color: #202020;
+    border: 1px solid #383838;
+
+    top: -45px;
+  }
+
+  .amenities .card-body .list
+  {
+    padding: 10px;
+  }
+
+  .amenities .card-title
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    color: #db9839;
+    height: 10px;
+  }
+
+
+  .amenities .list
+  {
+    color: white;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .carousel-inner
+  {
+    height: 250px;
+    border-radius: 5px;
+  }
+
+  .carousel-item
+  {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+
+    position: relative;
+    
+  }
+
+  .fa-caret-left, .fa-caret-right
+  {
+    color: white;
+  } 
+
+ 
+  .thumbnails
+  {
+    margin-top:20px;
+    text-align: center;
+  }
+
+  .opacity_control
+  {
+    opacity: 0.5;
+  }
+
+  .demo
+  {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+  }
+
+
+}
+
+
+
+
+
+
+
+/* ipads / tabs  */
+@media only screen and (min-width: 768px)
+{
+  
+  body, html 
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+  }
+
+  .tab_content
+  {
+    display: block;
+  }
+
+  .mobile_content
+  {
+    display: none;
+  }
+
+  .screen_content
+  {
+    display: none;
+  }
+
+  .container
+  {
+    color: #db9839;
+  }
+
+
+  .section_separator
+  {
+    height: 30px;
+    background-color: black;
+  }
+
+
+  .room_types
+  {
+    margin: auto;
+    padding: 2px;
+    width: 8rem;
+    transition: transform .2s;
+
+    background-color: black;
+    /* border: 1px solid #e7ba7a; */
+    border: 1px solid 	#505050;
+  }
+
+  .room_types:hover
+  {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 1) 0.1px 0.1px 2px;
+    
+  }
+
+  .card-body
+  {
+    text-align: center;
+  }
+
+  .card-img-top
+  {
+    display: none;
+  }
+
+  .card-title
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #db9839;
+    text-transform: capitalize;
+    height: 50px;
+  }
+
+  .card-text
+  {
+    color: white;
+    font-size: 15px;
+  }
+
+
+  .room_heading
+  {
+    font-weight: bold;
+    color: #db9839;
+    text-transform: capitalize;
+    font-size: 40px;
+  }
+
+
+
+  .room_price
+  {
+    color: #db9839;
+    text-transform: capitalize;
+  }
+
+  .room_price_value
+  {
+    font-size: 30px;
+  }
+
+
+  .call_us
+  {
+    padding: 10px;
+    width: 100%;
+    transition: transform .2s;
+
+    background-color: #202020;
+    border: 1px solid #383838;
+
+    text-align: center;
+
+    top: -45px;
+  }
+
+  .call_us .card-title
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+
+     font-size: 12px; 
+  }
+
+
+  .call_us h4
+  {
+    margin-bottom:0px; 
+    height: 20px;
+  }
+
+  .gap_up
+  {
+    margin-top: 40px !important;
+  }
+
+
+  .call_us .card-text
+  {
+    color: #e7ba7a;
+  }
+
+  .fa-phone-square
+  {
+    color: #db9839;
+    margin: 10px;
+  }
+
+  .fa-caret-down
+  {
+    color: #db9839;
+  }
+
+  .amenities
+  {
+    background-color: #202020;
+    border: 1px solid #383838;
+
+    top: -45px;
+  }
+
+  .amenities .card-body .list
+  {
+    padding: 10px;
+  }
+
+  .amenities .title
+  {
+    text-transform: capitalize;
+    color: #db9839;
+  }
+
+
+  .amenities .list
+  {
+    color: white;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .carousel-inner
+  {
+    height: 300px;
+    border-radius: 5px;
+  }
+
+  .carousel-item
+  {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+
+    position: relative;
+    
+  }
+
+  .fa-caret-left, .fa-caret-right
+  {
+    color: white;
+  } 
+
+ 
+  .thumbnails
+  {
+    margin-top:20px;
+    text-align: center;
+  }
+
+  .opacity_control
+  {
+    opacity: 0.5;
+  }
+
+  .demo
+  {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+  }
+
+  
+}
+
+
+
+
+
+
+/* desktop size */
+@media screen and (min-width: 1200px)  
+{
+  
+  body, html 
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+  }
+
+  .tab_content
+  {
+    display: none;
+  }
+
+  .mobile_content
+  {
+    display: none;
+  }
+
+  .screen_content
+  {
+    display: block;
+  }
+
+  .container
+  {
+    color: #db9839;
+  }
+
+
+  .section_separator
+  {
+    height: 50px;
+    background-color: black;
+  }
+
+
+  .room_types
+  {
+    margin: auto;
+    padding: 2px;
+    width: 13rem;
+    transition: transform .2s;
+
+    background-color: black;
+    /* border: 1px solid #e7ba7a; */
+    border: 1px solid 	#505050;
+  }
+
+  .room_types:hover
+  {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 1) 0.1px 0.1px 2px;
+    
+  }
+
+  .card-body
+  {
+    text-align: center;
+  }
+
+  .card-img-top
+  {
+    display: block;
+  }
+
+  .card-title
+  {
+    /* vertical-align: middle; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700 !important;
+    color: #db9839;
+    text-transform: uppercase;
+    height: 60px;
+  }
+
+  .card-text
+  {
+    color: white;
+    font-size: 15px;
+  }
+
+
+  .room_heading
+  {
+    color: #db9839;
+    text-transform: capitalize;
+    font-size: 40px;
+  }
+
+  .room_price
+  {
+    color: #db9839;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  .room_price_value
+  {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .gap_up
+  {
+    margin-top: 40px !important;
+  }
+
+
+  .call_us
+  {
+    padding: 10px;
+    width: 100%;
+    transition: transform .2s;
+
+    background-color: #202020;
+    border: 1px solid #383838;
+
+    text-align: center;
+
+    top: 0px;
+  }
+
+  .call_us .card-title
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+
+    font-size: 20px;
+
+  }
+
+
+  .call_us .card-text
+  {
+    color: #e7ba7a;
+  }
+
+  .fa-phone-square
+  {
+    color: #db9839;
+    margin: 10px;
+  }
+
+  .fa-caret-down
+  {
+    color: #db9839;
+  }
+
+  .amenities
+  {
+    background-color: #202020;
+    border: 1px solid #383838;
+
+    top: 0px;
+  }
+
+  .amenities .title
+  {
+    text-transform: capitalize;
+    color: #db9839;
+  }
+
+
+  .amenities .list
+  {
+    color: white;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .carousel-inner
+  {
+    height: 500px;
+    border-radius: 5px;
+  }
+
+  .carousel-item
+  {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    
+  }
+
+  .fa-caret-left, .fa-caret-right
+  {
+    color: white;
+  } 
+
+  .thumbnails
+  {
+    margin-top:20px;
+    text-align: center;
+  }
+
+  .opacity_control
+  {
+    opacity: 0.5;
+  }
+
+  .demo
+  {
+    width: 100%;
+    height: 130px;
+    border-radius: 5px;
+  }
+
+}

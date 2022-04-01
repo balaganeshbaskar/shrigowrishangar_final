@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Shri Gowri Shangar Hotels</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+		<!-- External stylesheet reference -->	
+		<!-- <link rel="stylesheet" type="text/css" href="css/template_styles.css"> DO NOT EDIT THIS CSS	 -->
+		<link rel="stylesheet" href="fa/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/gallery_styles.css">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
+		
+	</head>
+	<script src="js/index.js"></script>
+
+	<!-- onload="gettingJSON(); nav_active('home');" -->
+	<body onload="gallery_full_render(); gettingJSON(); nav_active('gallery')">
+			
+		<div class="navbar_div">
+			<div class="first_layer_nav">
+				<nav class="navbar navbar-dark">
+					<div class="container text-uppercase">
+						<div class="pull-left">
+							<a class=""><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Tamilnadu, India</a>
+						</div>
+						<div class="pull-right">
+							<a id="temp_data" class="temp_navbar"></a>
+							<!-- <p id="temp_data">abcd</p> -->
+						</div>
+					</div>
+				</nav>
+			</div>	
+			<div class="second_layer_nav">
+				<nav class="stroke navbar navbar-expand-xl navbar-dark">
+					<div class="container text-uppercase">
+						<a href="index.html" class="navbar-brand"><img class="logo" src="images/Logo.jpg" alt="Shri Gowri Shangar Hotel"></a>
+						<!-- <div class="pull-right">
+							<a class="temp_navbar">Temperature Temperature</a>
+						</div> -->
+						<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false">
+				        	<i class="fa fa-bars"></i>
+				        </button>
+				        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+				            <ul class="nav navbar-nav">
+				                <li class="nav-item">
+				                    <a id="nav1" class="nav-link" href="index.html"> Home </a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="nav2" class="nav-link" href="about_us.html"> About Us</a>
+				                </li>
+				                <!-- <li class="nav-item">
+				                    <a id="nav3" class="nav-link" href="#"> Rooms & Tarrif</a>
+				                </li> -->
+								<li class="nav-item dropdown">
+									<a id="navbarDropdown" class="nav-link" href="rooms.html"> Rooms & Tarrif</a>
+									<!-- <a class="nav-link " href="rooms.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Rooms & Tarrif
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Standard</a>
+										<a class="dropdown-item" href="#">Balcony</a>
+										<a class="dropdown-item" href="#">Deluxe</a>
+										<a class="dropdown-item" href="#">Superior</a>
+										<a class="dropdown-item" href="#">Grand Superior</a>
+
+									</div> -->
+								</li>
+				                <li class="nav-item">
+				                    <a id="nav4" class="nav-link" href="#"> Restaurant </a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="nav5" class="nav-link" href="gallery.html"> Gallery</a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="nav6" class="nav-link" href="contact_us.html"> Contact Us</a>
+				                </li>
+				            </ul>
+				        </div>
+
+					</div>
+				</nav>
+			</div>	
+
+
+			<div class="third_layer_nav">
+				<div class="container text-uppercase">
+					<div class="row">
+						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>Vegetarian Restaurant</b></p>
+						</div>
+						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>24 * 7 WIFI</b></p>
+						</div>
+						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>Banquet Hall</b></p>
+						</div>
+						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<p style="text-align: center; margin-top: 8px;"><b>Laundry Service</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- navbar end -->
+
+		<div class="hero-image">
+			<!-- Hero image div -->
+		</div>
+
+		<div class="section_separator">
+			<!-- Just a black separator div -->
+		</div>
+
+		<!-- bootstrap image gallery 1 -->
+		<div class="container" style="text-align: center;">
+
+			<div id="gallery_content" class="d-flex flex-wrap justify-content-center">
+				<div id="col1" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+				</div>
+
+				<div id="col2" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+				</div>
+
+				<div id="col3" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+				</div>
+
+				<!-- <div id="col1" class="d-flex flex-column">
+				</div>
+
+				<div id="col2" class="d-flex flex-column">
+				</div>
+
+				<div id="col3" class="d-flex flex-column">
+				</div> -->
+			</div>
+
+			<!-- <div class="d-flex flex-wrap justify-content-center">
+				<div class="d-flex flex-column">
+					<img data-aos="fade-right" onclick="gallery_view(1);" class="img-fluid" src="https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-right" class="img-fluid" src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-right" class="img-fluid" src="https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-right" class="img-fluid" src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+				</div>
+			
+				<div class="d-flex flex-column">
+					<img data-aos="fade-up" class="img-fluid" src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-up" class="img-fluid" src="https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-up" class="img-fluid" src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-up" class="img-fluid" src="https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+				</div>
+			
+				<div class="d-flex flex-column">
+					<img data-aos="fade-left" class="img-fluid" src="https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-left" class="img-fluid" src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-left" class="img-fluid" src="https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+					<img data-aos="fade-left" class="img-fluid" src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+				</div>
+				 <div class="full_width">
+					<img data-aos="zoom-in-up" class="img-fluid" src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&q=60">
+				</div>
+			</div> -->
+		</div>
+
+
+		 <!-- modal -->
+		 <div class="modal animate__animated animate__zoomIn" id="gallery_view_modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered ">
+			  <div class="modal-content">
+				<div class="modal-body">
+				   <!-- carousel -->
+				  <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel' >
+					
+					<!-- <div class='carousel-inner'>
+					  <div class='carousel-item active'>
+						<img class='img-size' src='https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1391&q=80' alt='First slide' />
+					  </div>
+					  <div class='carousel-item'>
+						<img class='img-size' src='https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80' alt='Second slide' />
+					  </div>
+					  <div class='carousel-item'>
+						<img class='img-size' src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80' alt='Second slide' />
+					  </div>
+					</div> 
+					<a class='carousel-control-prev' href='#carouselExampleIndicators' role='button' data-slide='prev' >
+					  <span class='carousel-control-prev-icon' aria-hidden='true' ></span>
+					  <span class='sr-only'>Previous</span>
+					</a>
+					<a class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='next' >
+					  <span class='carousel-control-next-icon' aria-hidden='true' ></span>
+					  <span class='sr-only'>Next</span>
+					</a> -->
+				  </div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" id="gallery_view_modal_close" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="section_separator">
+			<!-- Just a black separator div -->
+		</div>
+
+		  <div class="footer">
+			<div class="footer_layer_nav">
+				<nav class="stroke navbar navbar-expand-lg navbar-dark">
+					<div class="container text-uppercase">
+				        <div style="margin: auto;">
+				            <ul class="nav navbar-nav">
+				                <li class="nav-item">
+				                    <a id="footer1" class="nav-link" href="index.html"> Home </a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="footer2" class="nav-link" href="about_us.html"> About Us</a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="footer3" class="nav-link" href="rooms.html">Rooms & Tarrif</a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="footer4" class="nav-link" href="#"> Restaurant </a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="footer5" class="nav-link" href="gallery.html"> Gallery</a>
+				                </li>
+				                <li class="nav-item">
+				                    <a id="footer6" class="nav-link" href="contact_us.html"> Contact Us</a>
+				                </li>
+				            </ul>
+				        </div>
+
+					</div>
+				</nav>
+			</div>
+			<!-- style="border: 1px solid yellow;" -->
+			<div class="container">
+				<hr style="margin: 0px; width: 100%; border-top: 2px solid #6d4c1c;">
+				<div class="row" style="margin-bottom:10px; margin-top:10px; text-align: center;">
+					<div style="padding:0px; margin: auto;" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<a href="index.html" class="navbar-brand"><img class="footer_logo" src="images/Logo.jpg" alt="Shri Gowri Shangar Hotel"></a>
+					</div>
+					<div style="margin: auto;" class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+						<div class="social_media_icons row">
+							<div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<a href="#" class="fa fa-facebook fa-2x"></a>
+							</div>
+						</div>
+						<br>
+						<div class="social_media_icons row">
+							<div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<a href="#" class="fa fa-instagram fa-2x"></a>
+							</div>
+						</div>
+					</div>
+					<div style="margin: auto;" class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+						<!-- Links -->
+				        <h5 class="text-muted text-uppercase">Amenities</h5>
+				        <ul class="list-unstyled">
+				          <li>
+				            <p style="margin: auto;" class="text-muted">Vegetarian Hotel</p>
+				          </li>
+				          <li>
+				            <p style="margin: auto;" class="text-muted">24 * 7 Wifi</p>
+				          </li>
+				          <li>
+				            <p style="margin: auto;" class="text-muted">Banquet Hall</p>
+				          </li>
+				          <li>
+				            <p style="margin: auto;" class="text-muted">Laundry Service</p>
+				          </li>
+				        </ul>
+					</div>
+					<div style="text-align: justify;" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<!-- <h5 class="text-uppercase text-muted font-weight-bold">Footer text 1</h5> -->
+						<p style="margin: auto;" class="text-muted">You deserve a hotel as unique as you are. Your wishes inspire us to delight you in unique ways making your stay the escape you didn’t know you needed. Our guests know to expect the unexpected at Shri Gowri Shangar. They also expect the best – and our approach to luxury is no exception.</p>
+					</div>
+				</div>
+				<hr style="margin-top:10px; margin-bottom:10px; width: 100%; border-top: 2px solid #6d4c1c;">
+				<div class="row">
+					<div class="text-center col-lg-2 col-md-2 col-sm-12 col-xs-12">
+					</div>
+					<div class="text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+					</div>
+					<div class="text-right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<p style="margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px;" class="medium text-muted">&copy; Copyrights. All rights reserved.&nbsp;&nbsp;Powered by&nbsp;&nbsp;&nbsp;<a class="tybon" target="_blank" href="https://www.tybon.in">tybon.in</a></p>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		  </script>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		 <!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- 	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+
+</html>
