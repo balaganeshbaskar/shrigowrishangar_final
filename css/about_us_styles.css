@@ -277,7 +277,7 @@ img.footer_logo
   .about-us-content {
         color: white;
         margin-bottom: 65px;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: lighter;
   }
 }
@@ -285,14 +285,14 @@ img.footer_logo
     .about-us-header {
       font-family: 'Josefin Sans', sans-serif;
       font-weight: 700;
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #db9839;
       margin-top: 65px;
   }
   .about-us-content {
       color: white;
       margin-bottom: 65px;
-      font-size: 12px;
+      font-size: 1.5rem;
       font-weight: lighter;
   }
 }
