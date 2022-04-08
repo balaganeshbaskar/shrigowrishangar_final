@@ -205,19 +205,19 @@ function nav_active(page_name)
 function tabs_toggle(type)
 {   
     document.getElementById("standard").hidden = true;
-    document.getElementById("balcony").hidden = true;
+    // document.getElementById("balcony").hidden = true;
     document.getElementById("deluxe").hidden = true;
     document.getElementById("superior").hidden = true;
     document.getElementById("grand_superior").hidden = true;
 
     document.getElementById("standard_caret").hidden = true;
-    document.getElementById("balcony_caret").hidden = true;
+    // document.getElementById("balcony_caret").hidden = true;
     document.getElementById("deluxe_caret").hidden = true;
     document.getElementById("superior_caret").hidden = true;
     document.getElementById("grand_superior_caret").hidden = true;
 
     document.getElementById("standard_caret_1").hidden = true;
-    document.getElementById("balcony_caret_1").hidden = true;
+    // document.getElementById("balcony_caret_1").hidden = true;
     document.getElementById("deluxe_caret_1").hidden = true;
     document.getElementById("superior_caret_1").hidden = true;
     document.getElementById("grand_superior_caret_1").hidden = true;
@@ -256,22 +256,22 @@ function tabs_toggle(type)
         document.getElementById("standard_caret").hidden = false;
         document.getElementById("standard_caret_1").hidden = false;
     }
-    else if(type == 'balcony')
-    {
-        // document.getElementById("customer").hidden = false;
-        // document.getElementById("invoice").hidden = true;
-        // document.getElementById("quotation").hidden = true;
-        // document.getElementById("dc").hidden = true;
+    // else if(type == 'balcony')
+    // {
+    //     // document.getElementById("customer").hidden = false;
+    //     // document.getElementById("invoice").hidden = true;
+    //     // document.getElementById("quotation").hidden = true;
+    //     // document.getElementById("dc").hidden = true;
 
-        // document.getElementById("customer_btn").style.backgroundColor = b;
-        // document.getElementById("customer_btn").style.backgroundImage  = '';
-        // document.getElementById("customer_btn").style.color = c;   
+    //     // document.getElementById("customer_btn").style.backgroundColor = b;
+    //     // document.getElementById("customer_btn").style.backgroundImage  = '';
+    //     // document.getElementById("customer_btn").style.color = c;   
 
-        document.getElementById("balcony").hidden = false;
-        document.getElementById("balcony_caret").hidden = false;
-        document.getElementById("balcony_caret_1").hidden = false;
+    //     document.getElementById("balcony").hidden = false;
+    //     document.getElementById("balcony_caret").hidden = false;
+    //     document.getElementById("balcony_caret_1").hidden = false;
     
-    }
+    // }
     else if(type == 'deluxe')
     {
         // document.getElementById("customer").hidden = false;
@@ -324,7 +324,7 @@ function tabs_toggle(type)
 
 $(document).ready(function() {
     standard_currentSlide(1);
-    balcony_currentSlide(1);
+    // balcony_currentSlide(1);
     deluxe_currentSlide(1);
     superior_currentSlide(1);
     grand_superior_currentSlide(1);
@@ -336,12 +336,12 @@ $(document).ready(function() {
         standard_currentSlide(currentIndex);
     });
 
-    $('#balcony_carousal').on('slid.bs.carousel', function (e) {
-        // $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
-        // alert("hey there")
-        var currentIndex = $('#balcony_carousal div.active').index() + 1;
-        balcony_currentSlide(currentIndex);
-    });
+    // $('#balcony_carousal').on('slid.bs.carousel', function (e) {
+    //     // $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
+    //     // alert("hey there")
+    //     var currentIndex = $('#balcony_carousal div.active').index() + 1;
+    //     balcony_currentSlide(currentIndex);
+    // });
 
     $('#deluxe_carousal').on('slid.bs.carousel', function (e) {
         // $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
@@ -424,59 +424,59 @@ function standard_currentSlide(n)
 }   
 
 
-function balcony_currentSlide(n)
-{   
-    document.getElementById("balcony_thumb_1").classList.remove("opacity_control");
-    document.getElementById("balcony_thumb_2").classList.remove("opacity_control");
-    document.getElementById("balcony_thumb_3").classList.remove("opacity_control");
-    document.getElementById("balcony_thumb_4").classList.remove("opacity_control");
+// function balcony_currentSlide(n)
+// {   
+//     document.getElementById("balcony_thumb_1").classList.remove("opacity_control");
+//     document.getElementById("balcony_thumb_2").classList.remove("opacity_control");
+//     document.getElementById("balcony_thumb_3").classList.remove("opacity_control");
+//     document.getElementById("balcony_thumb_4").classList.remove("opacity_control");
 
-    document.getElementById("balcony_1_thumb_1").classList.remove("opacity_control");
-    document.getElementById("balcony_1_thumb_2").classList.remove("opacity_control");
-    document.getElementById("balcony_1_thumb_3").classList.remove("opacity_control");
-    document.getElementById("balcony_1_thumb_4").classList.remove("opacity_control");
+//     document.getElementById("balcony_1_thumb_1").classList.remove("opacity_control");
+//     document.getElementById("balcony_1_thumb_2").classList.remove("opacity_control");
+//     document.getElementById("balcony_1_thumb_3").classList.remove("opacity_control");
+//     document.getElementById("balcony_1_thumb_4").classList.remove("opacity_control");
 
-    if(n == 1)
-    {
-        document.getElementById("balcony_thumb_2").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_3").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_4").classList.add("opacity_control");
+//     if(n == 1)
+//     {
+//         document.getElementById("balcony_thumb_2").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_3").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_4").classList.add("opacity_control");
 
-        document.getElementById("balcony_1_thumb_2").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_3").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_4").classList.add("opacity_control");
-    }
-    else if(n == 2)
-    {
-        document.getElementById("balcony_thumb_1").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_3").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_4").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_2").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_3").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_4").classList.add("opacity_control");
+//     }
+//     else if(n == 2)
+//     {
+//         document.getElementById("balcony_thumb_1").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_3").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_4").classList.add("opacity_control");
 
-        document.getElementById("balcony_1_thumb_1").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_3").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_4").classList.add("opacity_control");
-    }
-    else if(n == 3)
-    {
-        document.getElementById("balcony_thumb_1").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_2").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_4").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_1").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_3").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_4").classList.add("opacity_control");
+//     }
+//     else if(n == 3)
+//     {
+//         document.getElementById("balcony_thumb_1").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_2").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_4").classList.add("opacity_control");
 
-        document.getElementById("balcony_1_thumb_1").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_2").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_4").classList.add("opacity_control");
-    }
-    else if(n == 4)
-    {
-        document.getElementById("balcony_thumb_1").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_2").classList.add("opacity_control");
-        document.getElementById("balcony_thumb_3").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_1").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_2").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_4").classList.add("opacity_control");
+//     }
+//     else if(n == 4)
+//     {
+//         document.getElementById("balcony_thumb_1").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_2").classList.add("opacity_control");
+//         document.getElementById("balcony_thumb_3").classList.add("opacity_control");
 
-        document.getElementById("balcony_1_thumb_1").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_2").classList.add("opacity_control");
-        document.getElementById("balcony_1_thumb_3").classList.add("opacity_control");
-    }
-}   
+//         document.getElementById("balcony_1_thumb_1").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_2").classList.add("opacity_control");
+//         document.getElementById("balcony_1_thumb_3").classList.add("opacity_control");
+//     }
+// }   
 
 function deluxe_currentSlide(n)
 {   
@@ -658,12 +658,22 @@ function gallery_full_render()
 
     var indicator = document.getElementById('carouselExampleIndicators');
 
-    const images = [
-        "css/images/temp_1.jpg",
-        "css/images/temp_2.jpg",
-        "css/images/temp_3.jpg",
-        "css/images/temp_4.jpg"
-    ];
+    // const images = [
+    //     "css/images/temp_1.jpg",
+    //     "css/images/temp_2.jpg",
+    //     "css/images/temp_3.jpg",
+    //     "css/images/temp_4.jpg"
+    // ];
+
+    var images = [];
+
+    for (let tu = 1; tu < 74; tu++) 
+    {
+        // image (1).JPG
+        // image(1).JPG
+        var name = 'images/Gallery/image('+tu+').JPG';
+        images.push(name);
+    }
 
     var col1 ='';
     var col2 ='';
@@ -790,7 +800,7 @@ function gallery_full_render()
     // indicator.innerHTML = indicator.innerHTML+indi;
     // indicator.innerHTML = indicator.innerHTML+left;
     // indicator.innerHTML = indicator.innerHTML+right;
-    console.log(full_content);
+    // console.log(full_content);
 
     indicator.innerHTML = full_content;
 
