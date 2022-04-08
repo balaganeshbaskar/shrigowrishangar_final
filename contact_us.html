@@ -26,6 +26,67 @@
 	</head>
 	<script src="js/index.js"></script>
 
+	<script>
+	function sendit()
+	{	
+		var counter = 0;
+		var name = document.getElementById("cust_name").value;
+		var mail = document.getElementById("cust_email").value;
+		var message = document.getElementById("cust_message").value;
+		var honey_pot = document.getElementById("_honeypot").value;
+		
+		var text = "Customer Name: "+name+"<br>Customer Mail Id: "+mail+"<br>Message: "+message;
+
+		if(name.length > 0)
+		{
+			counter += 1;
+		}
+		else
+		{
+			document.getElementById("cust_name").style.border = '1px solid red';
+		}
+
+		if(mail.length > 0)
+		{
+			counter += 1;
+		}
+		else
+		{
+			document.getElementById("cust_email").style.border = '1px solid red';
+		}
+
+		if(message.length > 0)
+		{
+			counter += 1;
+		}
+		else
+		{
+			document.getElementById("cust_message").style.border = '1px solid red';
+		}
+
+		if(counter == 3 && honey_pot.length == 0)
+		{
+			var key = "eK7COfMokP_XkmWpxBHEPHU3Dxkzu7It0wJjBthr2Xs"; // << YOUR KEY HERE
+			var message_name = "enquiry_to_mail";    // << YOUR MESSAGE NAME HERE
+			var urls = "https://maker.ifttt.com/trigger/" + message_name + "/with/key/" + key;
+			$.ajax({  
+			url: urls,
+			data: { value1: text },
+			dataType: "jsonp",
+			complete: function(jqXHR, textStatus) {
+				document.getElementById("EmailForm").hidden = true;
+				document.getElementById("thanks_enquiry").hidden = false;
+			} 
+			}); 
+			
+		}  
+		else
+		{
+			alert("Fill all 3 fields to submit enquiry!");
+		}
+	}
+	</script>
+
 	<!-- onload="gettingJSON(); nav_active('home');" -->
 	<body onload="gettingJSON(); nav_active('contact_us');">
 
@@ -153,22 +214,29 @@
 					</div>
 					<div>
 						<h3 class="heading">Enquiry</h3>
-						<form action='mailto:balaganeshbaskar@gmail.com' method='POST' enctype='multipart/form-data' name='EmailForm' class='enquiry_form'>
+						
+						<!-- action='mailto:balaganeshbaskar@gmail.com' method='POST' enctype='multipart/form-data' -->
+						<form name='EmailForm' id="EmailForm" class='enquiry_form'>
 							<div class="form-group">
 								<label for="cust_name">Name</label>
-								<input type="text" class="form-control" id="cust_name" placeholder="Name">
+								<input required type="text" name="name" class="form-control" id="cust_name" placeholder="Name">
 							</div>
 							<div class="form-group">
 							  <label for="cust_email">Email</label>
-							  <input type="email" class="form-control" id="cust_email" aria-describedby="emailHelp" placeholder="Enter email">
+							  <input required type="email" class="form-control" name="email" id="cust_email" aria-describedby="emailHelp" placeholder="Enter email">
 							  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 							</div>
 							<div class="form-group">
 								<label for="cust_message">Message / Query</label>
-								<textarea class="form-control" id="cust_message" rows="3" placeholder="Ask us anything..."></textarea>
-							  </div>
-							<button type="submit" class="enquiry_submit btn btn-primary shadow-none">Submit</button>
+								<textarea required class="form-control" id="cust_message" rows="3" placeholder="Ask us anything..."></textarea>
+							</div>
+							<input type="hidden" id="_honeypot" name="_honeypot" value="">
+							<button type="button" onclick="sendit()" class="enquiry_submit btn btn-primary shadow-none">Submit</button>
 						</form>
+
+						<div id="thanks_enquiry" style="font-size: large;" hidden>
+							<span>We received your enquiry, We will get back to you soon!</span>
+						</div>
 					</div>
 				</div>
 				<div style="text-align: left;" class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
