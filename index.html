@@ -387,16 +387,26 @@
 
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="images/LOGOS/cumi.jpeg" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/darling.png" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/inel.png" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/pmctech.jpeg" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/SBI-emblem.jpg" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/supreme.jpg" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/titan.jpeg" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/ttk.png" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/tvs.jpg" class="logo-images"></div>
-					<div class="swiper-slide"><img src="images/LOGOS/tvsscl.jpg" class="logo-images"></div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/LOGOS/cumi.jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/LOGOS/darling.png" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/LOGOS/pmctech.jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/LOGOS/SBI-emblem.jpg" class="logo-images"></div>		
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/LOGOS/titan.jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/LOGOS/ttk.png" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/LOGOS/inel.png" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/LOGOS/supreme.jpg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/LOGOS/tvs.jpg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/LOGOS/tvsscl.jpg" class="logo-images"></div>
+					</div>
 				</div>
 				<!-- <div class="swiper-pagination"></div> -->
 			</div>
@@ -501,6 +511,8 @@
 	      var swiper = new Swiper(".mySwiper", {
 	        slidesPerView: 3,
 	        spaceBetween: 30,
+			loop: true,
+        	loopFillGroupWithBlank: true,
 	        autoplay: {
 	          delay: 2500,
 	          disableOnInteraction: false,
